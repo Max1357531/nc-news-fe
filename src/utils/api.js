@@ -4,9 +4,15 @@ const api = axios.create({
   baseURL: "https://nc-news-8uuc.onrender.com/api/",
 });
 
-export const getArticles = () => {
-
-    return api.get("/articles").then(({data}) => {
+export const getArticles = (topic) => {
+    console.log("/articles" + (topic?`?topic=${topic}`:""), "<<<<")
+    return api.get("/articles",{params:{topic}}).then(({data}) => {
+      return data;
+    });
+  };
+  
+export const getTopics = () => {
+    return api.get("/topics").then(({data}) => {
       return data;
     });
   };
