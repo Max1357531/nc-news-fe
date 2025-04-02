@@ -12,7 +12,7 @@ export const Articles = () =>{
         return (<div></div>)
     }
     else{
-        console.log("loaded")
+
         return(<div>{articles.map((articleData)=><ArticleCard key={articleData.article_id} articleData={articleData}/>)}</div>)
     }
 }
