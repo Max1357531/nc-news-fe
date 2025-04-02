@@ -1,0 +1,63 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  border-bottom: 2px groove;
+  width: 100%;
+}
+
+.headerDiv{
+  width: 600px;
+  margin: auto;
+}
+
+/* All Cards */
+.allCards{
+  border-top-style: groove;
+  margin-bottom: 2rem;
+  padding-left:5%;
+  padding-right:5%;
+  padding-top: 5%;
+}
+
+
+/* Article Card */
+.articleHeader{
+  font-weight:500;
+}
+.articleCard{
+  text-align: left;
+  
+}
+
+.articleTopDiv{
+  display:grid;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.articleImg{
+  width: 100%;
+  object-fit: cover;
+}
+.articleTopic{
+  font-style: italic
+}
+
+.articleInteractionsDiv{
+  flex-direction: column;
+  display:flex;
+  text-align: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.articleInteractions{
+  margin: 20%;
+  border-radius: 10%;
+  background-color: #ADB1FF;
+
+}
+.articleInteractions:hover{
+  background-color: #7077FF;
+}
