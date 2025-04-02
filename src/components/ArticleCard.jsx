@@ -1,34 +1,34 @@
 import { Link } from "react-router-dom";
-import commentIcon from '../assets/comment.svg';
 
+import { CommentInteraction } from "./commentInteraction";
+import { VoteInteraction } from "./VoteInteraction";
 
 export const ArticleCard = ({ articleData }) => {
   console.log(articleData);
 
   return (
     <article className="articleCard allCards">
-        
-        <div className="articleTopDiv">
+      <div className="articleTopDiv">
         <Link to={`./${articleData.article_id}`}>
-        <img className="articleImg" src={articleData.article_img_url}></img>
+          <img className="articleImg" src={articleData.article_img_url}></img>
         </Link>
         <div className="articleInteractionsDiv">
-            <div className="articleComments articleInteractions"><h3>{articleData.comment_count}</h3></div>
-            <div className="articleVotes articleInteractions"><h3>{articleData.votes}</h3></div>
+          <CommentInteraction articleData={articleData} />
+          <VoteInteraction articleData={articleData} />
+        </div>
+      </div>
 
-        </div>
-        </div>
-        
-        <Link to={"./TBC"}>
+      <Link to={"./TBC"}>
         <h3 className="articleTopic">{articleData.topic}</h3>
-        </Link>
+      </Link>
 
       <Link to={`./${articleData.article_id}`}>
         <h1 className="articleHeader">{articleData.title}</h1>
-        
       </Link>
-      <h3 className="articleAuthor">Author: <Link to={`../users/${articleData.author}`}>{articleData.author}</Link></h3>
-      
+      <h3 className="articleAuthor">
+        Author:{" "}
+        <Link to={`../users/${articleData.author}`}>{articleData.author}</Link>
+      </h3>
     </article>
   );
 };
