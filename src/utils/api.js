@@ -5,7 +5,6 @@ const api = axios.create({
 });
 
 export const getArticles = (topic) => {
-    console.log("/articles" + (topic?`?topic=${topic}`:""), "<<<<")
     return api.get("/articles",{params:{topic}}).then(({data}) => {
       return data;
     });
