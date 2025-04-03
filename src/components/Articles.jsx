@@ -2,10 +2,11 @@ import { getArticles } from "../utils/api"
 import { useData } from "../hooks/useData"
 import { ArticleCard } from "./ArticleCard"
 import { useSearchParams } from "react-router-dom"
+import { Error404 } from "./Error404"
 
 
 export const Articles = () =>{
-    const [searchParams, setSearchParams] = useSearchParams()
+    const [searchParams] = useSearchParams()
 
     const {data: articles, loading,error} = useData(getArticles,searchParams.get("topic"))
 
@@ -13,10 +14,10 @@ export const Articles = () =>{
         return (<div></div>)
     }
     else if (error){
-        return <p>404 Not Found</p>
+        return <Error404 />
     }
     else{
 
-        return(<div className="articleMain">{articles.map((articleData)=><ArticleCard key={articleData.article_id} articleData={articleData}/>)}</div>)
+        return(<div className="articleMain">{articles.map((articleData)=><ArticleCard key={articleData.article_id} showTopic={!searchParams.get("topic")}articleData={articleData}/>)}</div>)
     }
 }

@@ -7,7 +7,6 @@ export const Article = () => {
   const { id } = useParams();
   const { data: article, loading, error } = useData(getArticle, id);
 
-
   if (loading) {
     return <div></div>;
   } else if (error) {
@@ -19,22 +18,16 @@ export const Article = () => {
         <div className="articleHeaderSub">
           <h3 className="articleAuthor">
             Author:{" "}
-            <Link to={`../users/${article.author}`}>
-              {article.author}
-            </Link>
-            
+            <Link to={`../users/${article.author}`}>{article.author}</Link>
           </h3>
           <h3 className="articleTopic">
-          Topic:{" "}
-          <Link to={"./TBC"}>
-          {article.topic}
-      </Link>
-      </h3>
+            Topic:{" "}
+            <Link to={`/articles?topic=${article.topic}`}>{article.topic}</Link>
+          </h3>
         </div>
         <img className="articleImage" src={article.article_img_url}></img>
+
       </div>
-      
-      
     );
   }
 };
