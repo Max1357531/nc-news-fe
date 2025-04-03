@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CommentInteraction } from "./commentInteraction";
 import { VoteInteraction } from "./VoteInteraction";
 
-export const ArticleCard = ({ articleData }) => {
+export const ArticleCard = ({ articleData,showTopic }) => {
 
 
   return (
@@ -18,10 +18,12 @@ export const ArticleCard = ({ articleData }) => {
         </div>
       </div>
 
-      <Link to={"./TBC"}>
+      {showTopic?
+      <Link to={`/articles/?topic=${articleData.topic}`}>
         <h3 className="articleTopic">{articleData.topic}</h3>
-      </Link>
-
+      </Link>:
+      <></>
+      }
       <Link to={`./${articleData.article_id}`}>
         <h1 className="articleHeaderCard">{articleData.title}</h1>
       </Link>

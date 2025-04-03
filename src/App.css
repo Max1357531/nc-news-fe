@@ -6,6 +6,10 @@ nav {
   width: 100%;
 }
 
+.bodyRoute{
+  min-height: 1000px;
+}
+
 .headerDiv {
   width: 600px;
   margin: auto;
@@ -34,16 +38,17 @@ nav {
 }
 /* Article Page */
 .articleMain {
-  border-top-style: groove;
+  
 
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+  padding-top: 0;
   align-items: center;
   margin: auto;
 }
 
 .articleHeader {
+
   border-bottom-style: groove;
   padding-bottom: 1rem;
   margin-bottom: 0;
@@ -127,6 +132,18 @@ nav {
   justify-content: space-evenly;
 }
 
+
+/* Error 404 */
+
+.ErrorDiv404{
+  margin: auto;
+  align-content: center;
+  height:60%
+}
+.Error404Header{
+  color: black;
+  font-size: 2rem ;
+}
 /* Interactions */
 .interaction {
   margin: 20%;
@@ -164,6 +181,9 @@ nav {
     color: #c2a7c7;
   }
   
+  .Error404Header{
+    color: white;
+  }
   .topicGridHalfExpanded {
 
     background-color: #8810a0;
