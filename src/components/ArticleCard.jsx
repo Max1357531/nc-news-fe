@@ -4,7 +4,7 @@ import { CommentInteraction } from "./commentInteraction";
 import { VoteInteraction } from "./VoteInteraction";
 
 export const ArticleCard = ({ articleData }) => {
-  console.log(articleData);
+
 
   return (
     <article className="articleCard allCards">
