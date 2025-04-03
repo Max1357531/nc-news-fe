@@ -23,7 +23,7 @@ export const ArticleCard = ({ articleData }) => {
       </Link>
 
       <Link to={`./${articleData.article_id}`}>
-        <h1 className="articleHeader">{articleData.title}</h1>
+        <h1 className="articleHeaderCard">{articleData.title}</h1>
       </Link>
       <h3 className="articleAuthor">
         Author:{" "}

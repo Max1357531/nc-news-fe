@@ -14,6 +14,6 @@ export const Articles = () =>{
     }
     else{
 
-        return(<div>{articles.map((articleData)=><ArticleCard key={articleData.article_id} articleData={articleData}/>)}</div>)
+        return(<div className="articleMain">{articles.map((articleData)=><ArticleCard key={articleData.article_id} articleData={articleData}/>)}</div>)
     }
 }

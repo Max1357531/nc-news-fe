@@ -4,6 +4,6 @@ export const VoteInteraction = ({articleData}) =>{
     return (
     <div className="votesInteraction interaction">
         <h3>{articleData.votes}</h3>
-        <img className="voteImg" src={likeIcon}></img>
+        <img className="voteImg vectorImg" src={likeIcon}></img>
       </div>)
 }
