@@ -37,8 +37,7 @@ nav {
   grid-template-rows: 1fr 2fr;
 }
 /* Article Page */
-.articleMain {
-  
+#articleMain {
 
   padding-left: 5%;
   padding-right: 5%;
@@ -52,7 +51,7 @@ nav {
   border-bottom-style: groove;
   padding-bottom: 1rem;
   margin-bottom: 0;
-  color:white;
+  color:black;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -61,6 +60,74 @@ nav {
 .articleHeaderSub {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.articleBodyDiv{
+  margin-top: 5%;
+  color: black;
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-top-color: black;
+
+  font-weight: 100;
+  background-color: #d3d2d2;
+  text-align: left;
+}
+.articleBody{
+
+  padding: 5%;
+  padding-top: 0;
+  
+}
+
+.articleCreatedAtDiv {
+  padding-top: 0px;
+  align-items: left;
+  text-align: left;
+  padding: 0.5%;
+  background-color: black;
+  width: 200px;
+  
+}
+.articleCreatedAt{
+  margin: 0;
+  color: white;
+}
+.placeholderImage{
+  opacity: 0%;
+}
+
+/* Comment Card */
+.commentBodyDiv{
+  margin: 4%;
+  margin-top: 5%;
+  color: black;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: black;
+  font-weight: 100;
+  background-color: #d3d2d2;
+  text-align: left;
+}
+
+.commentBody{
+
+  padding: 5%;
+  padding-top: 0;
+  
+}
+
+.commentCreatedAtDiv {
+  padding-top: 0px;
+  align-items: left;
+  text-align: left;
+  padding: 0.5%;
+  background-color: black;
+  width: 200px;
+  
+}
+.commentCreatedAt{
+  margin: 0;
+  color: white;
 }
 
 /* Topic Grid */
@@ -133,6 +200,7 @@ nav {
 }
 
 
+
 /* Error 404 */
 
 .ErrorDiv404{
@@ -152,6 +220,9 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.interaction:hover{
+  background-color: #646cff;
 }
 
 .vectorImg{
@@ -188,4 +259,25 @@ nav {
 
     background-color: #8810a0;
   }
+  .articleCreatedAtDiv{
+    background-color: #8810a0;
+  }
+  .commentCreatedAtDiv{
+    background-color: #8810a0;
+  }
+  .articleHeader{
+    color: white;
+  }
+
+  .articleBodyDiv{
+    border-color: #8810a0;
+    color: white;
+    background-color: #605f5f;
+  }
+  .commentBodyDiv{
+    border-color: #8810a0;
+    color: white;
+    background-color: #605f5f;
+  }
+
 }
