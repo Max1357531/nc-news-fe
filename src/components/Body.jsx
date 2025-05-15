@@ -10,7 +10,7 @@ export const Body = () => {
     return (
       <div className="bodyRoute">
         <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Topics />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/topics" element={<Topics />} />
         <Route path="/articles/:id" element={<Article />} />

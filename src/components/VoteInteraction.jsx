@@ -7,3 +7,5 @@ export const VoteInteraction = ({articleData}) =>{
         <img className="voteImg vectorImg" src={likeIcon}></img>
       </div>)
 }
+
+

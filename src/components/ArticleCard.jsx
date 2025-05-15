@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { CommentInteraction } from "./commentInteraction";
+import { CommentInteraction } from "./CommentInteraction";
 import { VoteInteraction } from "./VoteInteraction";
 
 export const ArticleCard = ({ articleData,showTopic }) => {
