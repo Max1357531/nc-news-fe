@@ -1,11 +1,10 @@
-# React + Vite
+# EchoPress
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This full-stack web application is interfaces with a [Backend API](https://github.com/Max1357531/nc-news)
 
-Currently, two official plugins are available:
+open APIs to display top headlines for both New York Times and Guardian News. Based on the selection by the user, the top-headlines could be for the following domains – world, politics, business, technology and sports. Each article can be shared by the user on Facebook, Twitter or via Email.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
 
 ## Expanding the ESLint configuration
 
