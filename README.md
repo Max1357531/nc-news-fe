@@ -11,7 +11,7 @@ This full-stack web application is interfaces with my [Backend API](https://gith
 
 Dark mode           |  Light mode
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![](./assets/Dark.png)  |  ![](./assets/Light.png)
  
 ### Responsive Design 
 
