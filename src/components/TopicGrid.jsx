@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { CommentInteraction } from "./commentInteraction";
+import { CommentInteraction } from "./CommentInteraction";
 import { dateToPrettyString } from "../utils/dateTime";
 
 export const TopicGrid = ({ articles }) => {
