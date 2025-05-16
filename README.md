@@ -5,4 +5,15 @@ This full-stack web application is interfaces with my [Backend API](https://gith
 > The front end of this project is hosted [here](https://nc-news-fe-vercel.vercel.app/).
 > N.B. the free backend hosting service ([render](https://render.com/)) spinsdown after inactivity. Please be aware that it will take ~60 seconds for the backend service to spin up. Allow for this time between loading the webpage for the first time and exploring the webpage.
 
+## Design choices
+### Color Scheme 
+ THe page uses two key color schemes for dark and light modes. Interactivity within a page or comment has it's own color and links to other pages have another color to differentiate clicking away from a page and interacting with it. 
+
+Dark mode           |  Light mode
+:-------------------------:|:-------------------------:
+![](https://...Dark.png)  |  ![](https://...Ocean.png)
+ 
+### Responsive Design 
+
+## Tech Stack
 
